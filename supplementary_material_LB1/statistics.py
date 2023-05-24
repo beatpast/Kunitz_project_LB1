@@ -34,14 +34,14 @@ def get_conf_mtrx(data,threashold):
         if i[eval]>=th and i[kind]==1: # false negative
             cm[1][0] += 1
             n +=1
-        if n < 10:
-            print(i[2],'FN') 
+            if n < 10:
+                print(i[2],'FN') 
                 # to save the ID  of the FN
         if i[eval]<th and i[kind]==0: # true negative
             cm[0][1] += 1
             m += 1
-        if m < 10:
-            print(i[2],'FP') 
+            if m < 10:
+                print(i[2],'FP') 
                 # to save ID of the FP
         if i[eval]>=th and i[kind] ==0:
             cm[1][1] += 1
